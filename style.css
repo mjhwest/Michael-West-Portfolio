@@ -11,7 +11,7 @@ p {
     color: black;
     margin-left: 50px;
     margin-top: 0px;
-    font-weight: normal;
+    font-weight:lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -25,6 +25,14 @@ header {
 h1 {
     font-weight:lighter ;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h2 {
+    margin-top: 0%;
+    margin-left: -80px;
+    font-weight:lighter ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0%;
 }
 
 h3 {
@@ -58,9 +66,24 @@ nav a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.about-me-container {
+    background-color: rgb(137, 137, 196);    
+}
+
+.about-me-flex {
+    display: inline-flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
 .profile-pic {
     width: 300px;
     margin-left: 50px;
+}
+
+.my-work-container {
+    background-color: blueviolet;
+    padding: 20px 300px;   
 }
 
 .horiseon-mockup {
@@ -68,29 +91,6 @@ nav a {
     margin-left: 50px;
     border: 5px solid whitesmoke; 
     margin-bottom: 10px;
-}
-
-.about-me-container {
-    background-color: rgb(137, 137, 196);       
-}
-
-.about-me-flex {
-    display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-
-h2 {
-    margin-top: 0%;
-    margin-left: -80px;
-    font-weight:lighter ;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0%;
-}
-
-.my-work-container {
-    background-color: blueviolet;
-    padding: 20px 300px;   
 }
 
 .my-work-flex {
@@ -113,22 +113,46 @@ h2 {
 
 .my-work-text p {
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
-.place-holder{
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.place-holder p {
-    margin-left: 0px;
-    margin-top: 10px;
+.place-holder-container {
+    padding-bottom: 200px;
 }
 
 .place-holder-img {
-    margin-top: 75px;
-    margin-left: 44px;
+    border: 5px solid whitesmoke;
+    margin-top:  25px;
+    margin-left: 93px;
+    flex-direction: row;
 }
+
+.place-holder-img:hover {
+    border: 2px solid black;
+}
+
+.place-holder-desc{
+    padding: 15px;
+    text-align: left;
+}
+
+.place-holder p {
+    margin-top: 10px;
+    margin-left: 93px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-me-container {
     text-align: center;
@@ -140,12 +164,11 @@ h2 {
 .contact-me-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 
 .contact-me-links {
-flex-direction: row;
+flex-direction: column;
 }
 
 .facebook-logo, 
