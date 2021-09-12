@@ -19,16 +19,13 @@ header {
     padding: 20px;
     text-align: center;
     background-color:rgb(153, 152, 153);
-    color: rgb(145, 43, 43);
-    
+    color: rgb(145, 43, 43);  
 }
 
 h1 {
     font-weight:lighter ;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
-
-
 
 h3 {
 margin-top: 0%;
@@ -43,7 +40,6 @@ margin-left: 0px ;
 font-weight: lighter;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 text-decoration: underline;
-
 }
 
 nav {
@@ -94,7 +90,7 @@ h2 {
 
 .my-work-container {
     background-color: blueviolet;
-    padding: 20px 300px;
+    padding: 20px 300px;   
 }
 
 .my-work-flex {
@@ -138,12 +134,23 @@ h2 {
     text-align: center;
     background-color: tomato;
     color: black;
-    height: 200px;
-   
+    height: 400px;
 }
 
 .contact-me-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 20px;
+    
 }
+
+.contact-me-links {
+flex-direction: row;
+}
+
+.facebook-logo, 
+.linkedin-logo,
+.github-logo {
+ width: 45px;
+}
+
