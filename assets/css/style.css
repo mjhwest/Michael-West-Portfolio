@@ -4,33 +4,39 @@
     margin: 0;
 }
 
+:root {
+    --whitesmoke:whitesmoke;
+    --black: black;
+}
 
 body {
     line-height: 1.5;
-    background-color:whitesmoke;
-}
-
-header {
-    padding: 6px;
-    text-align: center;
-    background-color: whitesmoke;
-    color: black;  
-    font-size: 50px;
-
+    background-image: url(../images/cool-back.png);
+    background-repeat: space;
+    background-size: 100%;
 }
 
 p { 
     font: 20px;
-    color: black;
+    color: var (--black); 
     margin-left: 50px;
     margin-bottom: 20px;
     font-weight: lighter;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+
+header {
+    padding: 6px;
+    text-align: center;
+    background-color: var (--whitesmoke);
+    color: var (--black); 
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 h1 {
-    font-weight:lighter ;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
     margin-top: 30px;
 }
 
@@ -45,7 +51,7 @@ h2 {
 h3 {
     padding: 6px;
     text-align: left;
-    color: black;  
+    color: var (--black);  
     font-size: 20px;
 }
 
@@ -53,6 +59,7 @@ h4 {
 font-weight: lighter;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 30px;
+padding-top: 24px;
 }
 
 nav {
@@ -62,7 +69,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color:black;
     text-decoration: underline;
     text-align: center;
     padding: 14px 16px;
@@ -72,7 +79,7 @@ nav a {
 }
 
 .about-me-container {
-    background-color: whitesmoke;   
+    background-color: var (--whitesmoke);
 }
 
 .about-me-flex {
@@ -99,6 +106,7 @@ nav a {
     margin-bottom: 10px;
 }
 
+
 .horiseon-mockup:hover {
 border: 5px solid black;
 }
@@ -124,7 +132,13 @@ border: 5px solid black;
 }
 
 .place-holder-container {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.place-holder-container p {
+    margin-left: auto;
+    inline-size: 200px;
+    overflow-wrap: break-word;
 }
 
 .place-holder-image {
@@ -154,11 +168,12 @@ justify-content: space-evenly;
 }
 
 .contact-me-container {
-    margin-top: 15px;
     text-align: center;
-    background-color: whiteswhitmoke;   
-    color: black;
+    color: var (--black); 
     height: 400px;
+    background-image: url(../images/cool-contact.png);
+    background-repeat: space;
+    background-size: 100%;
 }
 
 .contact-me-text {
@@ -182,6 +197,10 @@ justify-content: space-evenly;
 }
 
 .footer-container {
+    background-image: url(../images/cool-footer.png);
+    background-size: 100%;
+    background-repeat: space;
+    opacity: 0.6;
     padding: 20px;
     text-align: center;
     font-size: 10px;
@@ -195,3 +214,4 @@ justify-content: space-evenly;
         flex-direction: column;
     }
 }
+
