@@ -6,13 +6,6 @@ body {
     margin: 0%;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-    background-color:whitesmoke;
-    color: rgb(145, 43, 43);  
-}
-
 p { 
     font: 20px;
     color: black;
@@ -20,6 +13,13 @@ p {
     margin-top: 0px;
     font-weight:lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(153, 152, 153);
+    color: rgb(145, 43, 43);  
 }
 
 h1 {
@@ -53,7 +53,7 @@ text-decoration: underline;
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color:rgb(135, 143, 143);
+    background-color: rgb(135, 143, 143);
     padding: 5px;
 }
 
@@ -93,10 +93,6 @@ nav a {
     margin-bottom: 10px;
 }
 
-.horiseon-mockup:hover {
-border: 5px solid black;
-}
-
 .my-work-flex {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -121,41 +117,36 @@ border: 5px solid black;
 }
 
 .place-holder-container {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
-.place-holder-image {
+.place-holder-img {
     border: 5px solid whitesmoke;
+    margin-top:  25px;
+    margin-left: 93px;
+    flex-direction: row;
 }
 
-.blank-holders:hover{
-    border: 5px solid black;
+.place-holder-img:hover {
+    border: 2px solid black;
 }
 
-.place-holders {
-flex: 1;
-background-color: blueviolet;
-padding: 50px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+.place-holder-desc{
+    padding: 15px;
+    text-align: left;
+}
+
+.place-holder p {
+    margin-top: 10px;
+    margin-left: 93px;
+    flex-wrap: wrap;
 }
 
 
-.blank-holders > p {
-    text-align: center;
-}
 
-.blank-holders > img {
-    width: 100%;
-}
 
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-        flex-direction: column;
-    }
-}
+
+
 
 
 
