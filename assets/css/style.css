@@ -196,7 +196,7 @@ justify-content: space-evenly;
     border: 2px black solid;
 }
 
-.footer-container {
+footer {
     background-image: url(../images/cool-footer.png);
     background-size: 100%;
     background-repeat: space;
