@@ -30,7 +30,8 @@ header {
     color: var (--black); 
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display:grid;
+    display: grid;
+    background-color: whitesmoke
 }
 
 h1 {
@@ -78,10 +79,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding: 5px;
+    background-color: black;
 }
 
 nav a {
-    color:black;
+    color:whitesmoke;
     text-decoration: underline;
     text-align: center;
     padding: 14px 16px;
@@ -99,6 +101,7 @@ nav a:hover {
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
+    padding-top: 20px;
 }
 
 .profile-pic {
@@ -106,6 +109,11 @@ nav a:hover {
     width: 300px;
     margin-left: 50px;
     border-radius: 10%;
+    border: 2px black solid;
+}
+
+.profile-pic:hover {
+    border: 3px red solid;
 }
 
 .my-work-container {
