@@ -36,16 +36,21 @@ header {
 
 h1 {
     font-weight:lighter;
-    margin-top: 30px;
 }
 
 
 h2 {
+justify-content: center;
 font-weight: lighter;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
 padding-top: 24px;
 }
+
+h2:hover {
+    color: red;
+}
+
 
 h3 {
     padding: 6px;
@@ -55,17 +60,21 @@ h3 {
 }
 
 h4 {
+    justify-content: center;
 font-weight: lighter;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
-padding-top: 24px;
+padding-top: 10px;
+}
+
+h4:hover{
+    color: red;
 }
 
 h5 {
     font-weight: lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
-    padding-top: 24px;
 }
 
 h6 {
@@ -122,7 +131,7 @@ nav a:hover {
     text-align: center;
     color: var (--black); 
     height: 700px;
-    background-color: rgb(190, 174, 168)
+    background-color: rgb(190, 174, 168);
 }
 
 @media screen and (max-width: 768px ) {
@@ -174,7 +183,6 @@ nav a:hover {
 .place-holder-container {
     width: 100%;
     display: flex;
-    padding-bottom: 50px;
 }
 
 .place-holder-container p {
@@ -195,7 +203,6 @@ nav a:hover {
 .place-holders {
 flex: 1;
 background-color: rgb(190, 174, 168);
-padding: 50px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
@@ -223,6 +230,11 @@ justify-content: space-evenly;
     font-size: 20px;  
 }
 
+#email:hover {
+color: royalblue;
+text-decoration: underline;
+}
+
 .facebook-logo, 
 .linkedin-logo,
 .github-logo {
@@ -237,7 +249,11 @@ justify-content: space-evenly;
 }
 
 footer {
-    background-color: var (--whitesmoke);
+    width: 100%;
+    bottom: 0%;
+    margin-top: auto;
+    background-color:wheat;
+    opacity: .5;
     padding: 20px;
     text-align: center;
     font-size: 10px;
@@ -256,12 +272,16 @@ footer {
 .my-work-container {
 flex-direction: column;
 align-items: center;
-}
-    
+}  
 }
 
 @media screen and  (max-width: 768px ) {
 .contact-me-container {
+    flex-direction: column;
+}
+}
+@media screen and (max-width:768px) {
+footer {
     flex-direction: column;
 }
     
