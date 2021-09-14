@@ -1,11 +1,11 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 :root {
-    --whitesmoke:whitesmoke;
+    --whitesmoke: whitesmoke;
     --black: black;
 }
 
@@ -14,20 +14,19 @@ body {
     background-color: var(--whitesmoke);
 }
 
-p { 
+p {
     font: 20px;
-    color: var (--black); 
+    color: var (--black);
     margin-left: 50px;
     margin-bottom: 20px;
     font-weight: lighter;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
 
 header {
     padding: 6px;
     text-align: center;
-    color: var (--black); 
+    color: var (--black);
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
@@ -35,39 +34,37 @@ header {
 }
 
 h1 {
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
-
 h2 {
-justify-content: center;
-font-weight: lighter;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 50px;
-padding-top: 24px;
+    justify-content: center;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding-top: 24px;
 }
 
 h2:hover {
     color: red;
 }
 
-
 h3 {
     padding: 6px;
     text-align: left;
-    color: var (--black);  
+    color: var (--black);
     font-size: 20px;
 }
 
 h4 {
     justify-content: center;
-font-weight: lighter;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 50px;
-padding-top: 10px;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding-top: 10px;
 }
 
-h4:hover{
+h4:hover {
     color: red;
 }
 
@@ -93,7 +90,7 @@ nav {
 }
 
 nav a {
-    color:whitesmoke;
+    color: whitesmoke;
     text-decoration: underline;
     text-align: center;
     padding: 14px 16px;
@@ -106,7 +103,6 @@ nav a {
 nav a:hover {
     color: red;
 }
-
 
 .about-me-flex {
     display: flex;
@@ -128,19 +124,18 @@ nav a:hover {
 }
 
 .my-work-container {
-    width: 100%; 
+    width: 100%;
     justify-content: center;
     text-align: center;
-    color: var (--black); 
-    height: 700px;
+    color: var (--black);
+    height: 600px;
     background-color: rgb(190, 174, 168);
 }
 
-
 .my-work-text {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 20px;  
+    font-size: 20px;
     justify-content: center;
     overflow-wrap: break-word;
     text-align: center;
@@ -170,7 +165,6 @@ nav a:hover {
     border-radius: 1%;
 }
 
-
 .horiseon-image:hover {
     border: black 2px solid;
 }
@@ -187,7 +181,7 @@ nav a:hover {
 }
 
 .my-work-container p {
-    margin:auto;
+    margin: auto;
     inline-size: 400px;
     overflow-wrap: break-word;
 }
@@ -202,108 +196,101 @@ nav a:hover {
     border: 5px solid whitesmoke;
 }
 
-
 .place-holder-image:hover {
     border: 5px solid black;
 }
 
 .place-holders {
-flex: 1;
-background-color: rgb(190, 174, 168);
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+    flex: 1;
+    background-color: rgb(190, 174, 168);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .blank-holders {
     margin-left: 10px;
 }
 
-.blank-holders > img {
+.blank-holders>img {
     width: 100%;
 }
 
 .contact-me-container {
     text-align: center;
-    color: var (--black); 
+    color: var (--black);
     height: 400px;
     background-color: var (--whitesmoke);
 }
 
 .contact-me-text {
     margin: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
 }
 
 #email:hover {
-color: royalblue;
-text-decoration: underline;
+    color: royalblue;
+    text-decoration: underline;
 }
 
-.facebook-logo, 
+.facebook-logo,
 .linkedin-logo,
 .github-logo {
- width: 45px;
- border-radius: 10%;
+    width: 45px;
+    border-radius: 10%;
 }
 
 .facebook-logo:hover,
 .linkedin-logo:hover,
-.github-logo:hover  {
+.github-logo:hover {
     border: 5px black solid;
 }
 
 footer {
+    max-height: 15px;
     width: 100%;
     bottom: 0%;
     margin-top: auto;
-    background-color:wheat;
+    background-color: wheat;
     opacity: .5;
     padding: 20px;
     text-align: center;
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-
-@media screen and (max-width: 768px) {
-.about-me-flex {
-    flex-direction: column;
-    align-items: center;
-}
 }
 
 @media screen and (max-width: 768px) {
-.my-work-container {
-margin: auto;
-flex-direction: column;
-align-items: center;
-}  
+    .about-me-flex {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media screen and  (max-width: 768px ) {
-.contact-me-container {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+    .my-work-container {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .contact-me-container {
+        flex-direction: column;
+    }
 }
+
 @media screen and (max-width:768px) {
-footer { margin: auto;
-}
+    footer {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .horiseon-image-spot {
         width: 300px;
         justify-content: center;
-        margin:auto;
+        margin: auto;
     }
-}
-
-@media screen  and (max-width: 250px) {
-#galaxy-fold-my-work-container { 
-    width: 280px;
-    justify-content: center;
-}
 }
