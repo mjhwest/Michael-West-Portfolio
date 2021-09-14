@@ -89,6 +89,7 @@ nav {
     justify-content: flex-end;
     padding: 5px;
     background-color: black;
+    margin: auto;
 }
 
 nav a {
@@ -233,7 +234,6 @@ justify-content: space-evenly;
     margin: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 20px;  
 }
 
 #email:hover {
@@ -264,6 +264,7 @@ footer {
     text-align: center;
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 
@@ -288,9 +289,8 @@ align-items: center;
 }
 }
 @media screen and (max-width:768px) {
-footer {
-    flex-direction: column;
-}   
+footer { margin: auto;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -299,4 +299,11 @@ footer {
         justify-content: center;
         margin:auto;
     }
+}
+
+@media screen  and (max-width: 250px) {
+#galaxy-fold-my-work-container { 
+    width: 280px;
+    justify-content: center;
+}
 }
