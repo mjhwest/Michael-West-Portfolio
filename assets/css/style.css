@@ -4,15 +4,24 @@
     margin: 0;
 }
 
+
+/* root is a structural pseduo class, i used to to style content that has the same colors for background and text color  */
+
 :root {
     --whitesmoke: whitesmoke;
     --black: black;
 }
 
+
+/* Line height is set to 1.5 so it loss less cluttered and is easier to read applie ca, background color to body */
+
 body {
     line-height: 1.5;
     background-color: var(--whitesmoke);
 }
+
+
+/* anything within a <p> XXXXX </p> will have the below attributes */
 
 p {
     font: 20px;
@@ -23,15 +32,56 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+
+/* header is my top section of webpage, imnportant aspects was text to be centered, using text-align:center 
+and to make sure the font size and padding was suitable  */
+
 header {
     padding: 6px;
     text-align: center;
     color: var (--black);
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: grid;
     background-color: whitesmoke
 }
+
+
+/* the nav is the 2nd part of my portfolio, 
+i used display flex so when the page shrinks the section does too, justify content, flex-end so that its always
+at the end. */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: black;
+    margin: auto;
+}
+
+
+/* nav a refers to the text elements below, i wanted them to be different from the rest of the body
+so they stound out a bit more and are more obvious to see */
+
+nav a {
+    color: whitesmoke;
+    text-decoration: underline;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+}
+
+
+/* added a pseduo element in hover, so when you hover over each work in nav bar the font will go from back to red */
+
+nav a:hover {
+    color: red;
+}
+
+
+/* h1 is within the header, so it has the header attributes, but i wanted font-weight lighter as i thought it looked better */
 
 h1 {
     font-weight: lighter;
@@ -45,7 +95,14 @@ h2 {
     padding-top: 24px;
 }
 
-h2:hover {
+
+/* i added a hover pseduo element so that when the mouse is hovering over it matches what happens in the nav */
+
+
+/* as h2 amnd h4 now are both doing the same hover, you can use the ',' to apply it to both sections */
+
+h2:hover,
+h4:hover {
     color: red;
 }
 
@@ -64,14 +121,11 @@ h4 {
     padding-top: 10px;
 }
 
-h4:hover {
-    color: red;
-}
-
 h5 {
     font-weight: lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
+    margin: auto;
 }
 
 h6 {
@@ -81,28 +135,8 @@ h6 {
     padding-top: 24px;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px;
-    background-color: black;
-    margin: auto;
-}
 
-nav a {
-    color: whitesmoke;
-    text-decoration: underline;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 30px;
-    font-weight: lighter;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-}
-
-nav a:hover {
-    color: red;
-}
+/*my about me section will flex to the screen */
 
 .about-me-flex {
     display: flex;
@@ -110,6 +144,9 @@ nav a:hover {
     font-size: 16px;
     padding-top: 20px;
 }
+
+
+/* profile pic flexs also gave it a border radius and border for styling purposes */
 
 .profile-pic {
     display: flex;
@@ -123,6 +160,9 @@ nav a:hover {
     border: 3px red solid;
 }
 
+
+/* i wanted everything centered for this section as i thought it looked best  */
+
 .my-work-container {
     width: 100%;
     justify-content: center;
@@ -132,14 +172,8 @@ nav a:hover {
     background-color: rgb(190, 174, 168);
 }
 
-.my-work-text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
-    justify-content: center;
-    overflow-wrap: break-word;
-    text-align: center;
-}
+
+/* this specifically refers to 'p' inside my work container, not all other p within portfolio  */
 
 .my-work-container p {
     margin-left: auto;
@@ -152,6 +186,9 @@ nav a:hover {
     flex-direction: column;
     margin: auto;
 }
+
+
+/* i set the image to 500px as i thought it was a good size, also want it to flex and stay in the center */
 
 .horiseon-image-spot {
     display: flex;
@@ -169,11 +206,19 @@ nav a:hover {
     border: black 2px solid;
 }
 
+
+/* refers to the p i.e text within the image-holder section, 
+ i set inline size to 500px so that if i wanted a bigger title for the picture
+ the text would only go 500px wide */
+
 .image-holder p {
     margin-left: auto;
     inline-size: 500px;
     overflow-wrap: break-word;
 }
+
+
+/* this is the section for my place-holders, but i will put fututre projects here  */
 
 .place-holder-container {
     width: 100%;
@@ -186,19 +231,35 @@ nav a:hover {
     overflow-wrap: break-word;
 }
 
+
+/* this is making sure the text in this section are automatically left of the container
+stay with 200px 
+and words wrap is they extend past the inline size */
+
 .place-holder-container p {
     margin-left: auto;
     inline-size: 200px;
     overflow-wrap: break-word;
 }
 
+
+/* giving each place holder a border for styling reasons */
+
 .place-holder-image {
     border: 5px solid whitesmoke;
 }
 
+
+/* when you hover over each place holder the border changes from whitesmoke to black
+again for styling reasons */
+
 .place-holder-image:hover {
     border: 5px solid black;
 }
+
+
+/* place-holders will flex proportinality to the space they have
+will flex to the screen but also stay evenly spaced out */
 
 .place-holders {
     flex: 1;
@@ -206,14 +267,6 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.blank-holders {
-    margin-left: 10px;
-}
-
-.blank-holders>img {
-    width: 100%;
 }
 
 .contact-me-container {
@@ -229,10 +282,17 @@ nav a:hover {
     font-weight: lighter;
 }
 
+
+/* made an id for email so it was specific to the email alone
+wanted it to change to blue and underline when you hover on it */
+
 #email:hover {
     color: royalblue;
     text-decoration: underline;
 }
+
+
+/* all logos are the same width and have the same border-radius for styling purposes */
 
 .facebook-logo,
 .linkedin-logo,
@@ -241,11 +301,18 @@ nav a:hover {
     border-radius: 10%;
 }
 
+
+/* when you hover over each logo they get a black solid border, again for stlying */
+
 .facebook-logo:hover,
 .linkedin-logo:hover,
 .github-logo:hover {
     border: 5px black solid;
 }
+
+
+/* i wanted the footer to be a very small section at the bottom of the page
+i choose opacity .5 so that the background color is only half */
 
 footer {
     max-height: 15px;
@@ -259,6 +326,10 @@ footer {
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+/* media queries were used we made to i could define different style rules for 
+different media types */
 
 @media screen and (max-width: 768px) {
     .about-me-flex {
