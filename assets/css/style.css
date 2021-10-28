@@ -95,12 +95,6 @@ h2 {
     padding-top: 24px;
 }
 
-
-/* i added a hover pseduo element so that when the mouse is hovering over it matches what happens in the nav */
-
-
-/* as h2 amnd h4 now are both doing the same hover, you can use the ',' to apply it to both sections */
-
 h2:hover,
 h4:hover {
     color: red;
@@ -177,33 +171,45 @@ h6 {
 
 .my-work-container p {
     margin-left: auto;
+    overflow-wrap: break-word;
 }
 
-.horiseon-flex {
+.feature-work-text {
+    text-align: justify;
+}
+
+.feature-work {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
+    height: max-content;
 }
 
 
 /* i set the image to 500px as i thought it was a good size, also want it to flex and stay in the center */
 
-.horiseon-image-spot {
+.instant-crypto {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
+    background-position: center;
+    background-size: cover;
 }
 
-.horiseon-image {
+.project-1-cover {
     width: 100%;
     border-radius: 1%;
 }
 
-.horiseon-image:hover {
+.project-1-cover {
     border: black 2px solid;
+}
+
+.project-1-cover:hover {
+    border: red 2px solid;
 }
 
 
@@ -218,17 +224,38 @@ h6 {
 }
 
 
-/* this is the section for my place-holders, but i will put fututre projects here  */
+/* Weather Dashboard / Daily Work Scheudle image */
 
-.place-holder-container {
-    width: 100%;
-    display: flex;
+.weather-dashboard,
+.daily-work {
+    width: 370px;
+    background-size: cover;
+    background-position: center;
 }
 
-.my-work-container p {
-    margin: auto;
-    inline-size: 400px;
-    overflow-wrap: break-word;
+.weather-cover,
+.daily-cover {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.weather-cover,
+.daily-cover {
+    border: black 2px solid;
+}
+
+.weather-cover:hover,
+.daily-cover:hover {
+    border: red 2px solid;
+}
+
+
+/* this is the section for my place-holders, but i will put fututre projects here  */
+
+.other-work-container {
+    width: 100%;
+    display: flex;
+    background-color: rgb(190, 174, 168);
 }
 
 
@@ -236,9 +263,9 @@ h6 {
 stay with 200px 
 and words wrap is they extend past the inline size */
 
-.place-holder-container p {
+.other-work-container p {
     margin-left: auto;
-    inline-size: 200px;
+    inline-size: fit-content;
     overflow-wrap: break-word;
 }
 
@@ -258,15 +285,17 @@ again for styling reasons */
 }
 
 
-/* place-holders will flex proportinality to the space they have
+/* other-holders will flex proportinality to the space they have
 will flex to the screen but also stay evenly spaced out */
 
-.place-holders {
+.other-holders {
+    margin-top: auto;
     flex: 1;
     background-color: rgb(190, 174, 168);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 5%;
 }
 
 .contact-me-container {
