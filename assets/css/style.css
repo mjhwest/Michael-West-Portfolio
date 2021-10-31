@@ -301,7 +301,7 @@ will flex to the screen but also stay evenly spaced out */
 .contact-me-container {
     text-align: center;
     color: var (--black);
-    height: 400px;
+    height: 25vh;
     background-color: var (--whitesmoke);
 }
 
