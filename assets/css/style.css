@@ -85,6 +85,7 @@ nav a:hover {
 
 h1 {
     font-weight: lighter;
+    font-family: 'JunebugStompNF', sans-serif;
 }
 
 h2 {
@@ -187,7 +188,7 @@ h6 {
     justify-content: center;
     text-align: center;
     color: var (--black);
-    height: 600px;
+    height: 400px;
     background-color: rgb(190, 174, 168);
 }
 
@@ -242,15 +243,19 @@ h6 {
  i set inline size to 500px so that if i wanted a bigger title for the picture
  the text would only go 500px wide */
 
+
+/* 
 .image-holder p {
     margin-left: auto;
     inline-size: 500px;
     overflow-wrap: break-word;
-}
+} */
 
 
 /* Weather Dashboard / Daily Work Scheudle image */
 
+
+/* 
 .weather-dashboard,
 .daily-work {
     width: 370px;
@@ -277,13 +282,14 @@ h6 {
 
 /* this is the section for my place-holders, but i will put fututre projects here  */
 
-.other-work-container {
+
+/* .other-work-container {
     width: 100%;
     display: flex;
     background-color: rgb(190, 174, 168);
-}
+} */
 
-
+*/
 /* this is making sure the text in this section are automatically left of the container
 stay with 200px 
 and words wrap is they extend past the inline size */
