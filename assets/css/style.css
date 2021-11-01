@@ -42,7 +42,7 @@ header {
     color: var (--black);
     font-size: 50px;
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    background-color: whitesmoke
+    background-color: lightskyblue;
 }
 
 
@@ -127,6 +127,10 @@ nav a:hover {
 /*my about me section will flex to the screen */
 
 .about-me-container {
+    /* background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
     background-color: whitesmoke;
 }
 
@@ -219,11 +223,12 @@ nav a:hover {
 .contact-me-container {
     text-align: center;
     color: var (--black);
-    height: 20vh;
-    background-color: var (--whitesmoke);
+    /* background-color: var (--whitesmoke); */
+    background-color: lightskyblue;
 }
 
 .contact-me-text {
+    text-align: center;
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
@@ -234,8 +239,12 @@ nav a:hover {
 wanted it to change to blue and underline when you hover on it */
 
 #email:hover {
-    color: royalblue;
+    color: red;
     text-decoration: underline;
+}
+
+.footer {
+    justify-content: center;
 }
 
 
@@ -265,14 +274,6 @@ different media types */
 
 @media screen and (max-width:768px) {
     footer {
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .horiseon-image-spot {
-        width: 300px;
-        justify-content: center;
         margin: auto;
     }
 }
