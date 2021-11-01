@@ -139,6 +139,31 @@ h6 {
     padding-top: 20px;
 }
 
+.image1 {
+    height: 250px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.carousel-caption {
+    top: 93%;
+    z-index: 50;
+}
+
+.carousel-inner {
+    overflow: visible !important;
+}
+
+.cara-text {
+    margin-left: 0;
+}
+
 
 /* profile pic flexs also gave it a border radius and border for styling purposes */
 
