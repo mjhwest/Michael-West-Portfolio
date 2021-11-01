@@ -41,7 +41,7 @@ header {
     text-align: center;
     color: var (--black);
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     background-color: whitesmoke
 }
 
@@ -80,13 +80,48 @@ nav a:hover {
     color: red;
 }
 
-
-/* h1 is within the header, so it has the header attributes, but i wanted font-weight lighter as i thought it looked better */
-
-h1 {
-    font-weight: lighter;
-    font-family: 'JunebugStompNF', sans-serif;
+.title-text {
+    font-family: 'Hijo Puta Peligroso', sans-serif;
+    font-size: 65px;
 }
+
+.work-title {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.cara-title-crypto {
+    font-size: 30px;
+    font-family: 'Felona st', sans-serif;
+    color: black;
+}
+
+.cara-title-work {
+    font-size: 40px;
+    color: black;
+    font-family: 'Franzo', sans-serif;
+}
+
+.cara-title-weather {
+    font-size: 40px;
+    color: black;
+    font-family: 'Brush Lettering One', sans-serif;
+}
+
+
+/* .cara-text-work {
+    font: 24px;
+    font-style: bold;
+    font-family: 'Sughar', sans-serif;
+} */
+
+
+/* .cara-text-crypto {
+    font-family: 'Felona st', sans-serif;
+    font-style: bold;
+    font: 24px;
+} */
 
 h2 {
     justify-content: center;
@@ -132,6 +167,10 @@ h6 {
 
 
 /*my about me section will flex to the screen */
+
+.about-me-container {
+    background-color: whitesmoke;
+}
 
 .about-me-flex {
     display: flex;
@@ -188,7 +227,7 @@ h6 {
     justify-content: center;
     text-align: center;
     color: var (--black);
-    height: 400px;
+    height: 500px;
     background-color: rgb(190, 174, 168);
 }
 
