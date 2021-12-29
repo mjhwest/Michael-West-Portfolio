@@ -97,7 +97,7 @@ nav a:hover {
 
 .cara-title-crypto {
     font-size: 30px;
-    font-family: 'Felona st', sans-serif;
+    font-family: 'Franzo', sans-serif;
     color: black;
 }
 
@@ -110,7 +110,7 @@ nav a:hover {
 .cara-title-weather {
     font-size: 40px;
     color: black;
-    font-family: 'Brush Lettering One', sans-serif;
+    font-family: 'Franzo', sans-serif;
 }
 
 .contact-title {
@@ -189,7 +189,7 @@ nav a:hover {
     text-align: center;
     color: var (--black);
     height: 500px;
-    background-color: rgb(190, 174, 168);
+    background-color: whitesmoke;
 }
 
 
