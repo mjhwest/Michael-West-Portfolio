@@ -246,6 +246,14 @@ wanted it to change to blue and underline when you hover on it */
     justify-content: center;
 }
 
+.carousel-control-prev-icon {
+    background-color: black;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+}
+
 
 /* media queries were used we made to i could define different style rules for 
 different media types */
