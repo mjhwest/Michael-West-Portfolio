@@ -4,27 +4,19 @@
     margin: 0;
 }
 
-
-/* root is a structural pseduo class, i used to to style content that has the same colors for background and text color  */
-
 :root {
     --whitesmoke: whitesmoke;
     --black: black;
 }
 
-
-/* Line height is set to 1.5 so it loss less cluttered and is easier to read applie ca, background color to body */
-
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     line-height: 1.5;
     background-color: var(--whitesmoke);
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    min-width: 100%;
+    overflow-y: hidden;
 }
-
-
-/* anything within a <p> XXXXX </p> will have the below attributes */
 
 p {
     font: 20px;
@@ -35,36 +27,36 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
-/* header is my top section of webpage, imnportant aspects was text to be centered, using text-align:center 
-and to make sure the font size and padding was suitable  */
-
 header {
     /* padding: 6px; */
     text-align: center;
     color: var (--black);
     font-size: 50px;
-    background-color: lightskyblue;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-
-/* the nav is the 2nd part of my portfolio, 
-i used display flex so when the page shrinks the section does too, justify content, flex-end so that its always
-at the end. */
+.navbar-toggler {
+    color: white !important;
+}
 
 nav {
     display: flex;
     justify-content: flex-end;
     /* padding: 5px; */
-    background-color: black;
+    /* background-color: lightskyblue; */
     margin: auto;
 }
 
+.navbar {
+    color: white !important;
+    background-color: transparent !important;
+}
 
-/* nav a refers to the text elements below, i wanted them to be different from the rest of the body
-so they stound out a bit more and are more obvious to see */
+.navbar-collapse {
+    justify-content: flex-end;
+}
 
-nav a {
+.nav-link {
     color: whitesmoke;
     text-decoration: underline;
     text-align: center;
@@ -75,14 +67,13 @@ nav a {
     display: flex;
 }
 
-
-/* added a pseduo element in hover, so when you hover over each work in nav bar the font will go from back to red */
-
-nav a:hover {
-    color: red;
+.nav-link:hover {
+    color: red !important;
 }
 
 .title-text {
+    letter-spacing: 10px;
+    color: rgba(255, 255, 255, 0.67);
     font-family: 'Hijo Puta Peligroso', sans-serif;
     font-size: 65px;
 }
@@ -101,25 +92,25 @@ nav a:hover {
 }
 
 .cara-title-crypto {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Franzo', sans-serif;
-    color: black;
+    color: white;
 }
 
 .cara-title-work {
     font-size: 40px;
-    color: black;
+    color: white;
     font-family: 'Franzo', sans-serif;
 }
 
-.cara-title-weather {
+.cara-title-commerce {
     font-size: 40px;
-    color: black;
+    color: white;
     font-family: 'Franzo', sans-serif;
 }
 
 .carousel-indicators {
-    bottom: -120px;
+    /* bottom: -120px; */
 }
 
 .contact-title {
@@ -135,15 +126,20 @@ nav a:hover {
 
 /*my about me section will flex to the screen */
 
-.about-me-container {
+
+/* .about-me-container {
     /* background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; */
-    /* background-color: whitesmoke; */
-}
 
-.about-me-flex {
+
+/* background-color: whitesmoke; */
+
+
+/* } */
+
+*/ .about-me-flex {
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -173,6 +169,7 @@ nav a:hover {
 
 .cara-text {
     margin-left: 0;
+    color: white;
 }
 
 
@@ -269,7 +266,8 @@ wanted it to change to blue and underline when you hover on it */
 /* media queries were used we made to i could define different style rules for 
 different media types */
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
     .about-me-flex {
         flex-direction: column;
         align-items: center;
@@ -282,19 +280,6 @@ different media types */
         flex-direction: column;
         align-items: center;
     }
-}
-
-
-/* @media screen and (max-width: 768px) {
-    .contact-me-container {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:768px) {
-    footer {
-        margin: auto;
-    }
 } */
 
 .main-section {
@@ -304,8 +289,10 @@ different media types */
 }
 
 .two-column {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .left {
@@ -328,7 +315,17 @@ different media types */
     border-radius: 12px;
 }
 
+
+/* media queries for responsivness */
+
 @media (max-width: 1200px) {
+    .image1 {
+        width: 80%;
+        height: auto;
+    }
+    body {
+        overflow: auto;
+    }
     .two-column {
         display: inline-block;
     }
@@ -337,5 +334,29 @@ different media types */
     }
     .right {
         width: 100%;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+    .work-title {
+        padding-top: 30px;
+    }
+    .carousel-caption {
+        display: block !important;
+    }
+    .two-column {
+        flex-direction: unset;
+        display: inline-block;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        overflow: auto;
     }
 }
