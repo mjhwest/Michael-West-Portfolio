@@ -16,8 +16,11 @@
 /* Line height is set to 1.5 so it loss less cluttered and is easier to read applie ca, background color to body */
 
 body {
+    min-height: 100vh;
     line-height: 1.5;
     background-color: var(--whitesmoke);
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -37,7 +40,7 @@ p {
 and to make sure the font size and padding was suitable  */
 
 header {
-    padding: 6px;
+    /* padding: 6px; */
     text-align: center;
     color: var (--black);
     font-size: 50px;
@@ -52,7 +55,7 @@ at the end. */
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: black;
     margin: auto;
 }
@@ -87,8 +90,10 @@ nav a:hover {
 .work-title {
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
+    color: #fff;
     text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
 }
 
 .work-title:hover {
@@ -113,6 +118,10 @@ nav a:hover {
     font-family: 'Franzo', sans-serif;
 }
 
+.carousel-indicators {
+    bottom: -120px;
+}
+
 .contact-title {
     /* font-family: 'Hijo Puta Peligroso', sans-serif; */
     font-family: 'Karmatic Arcade', sans-serif;
@@ -131,7 +140,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; */
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 .about-me-flex {
@@ -142,7 +151,7 @@ nav a:hover {
 }
 
 .image1 {
-    height: 250px;
+    height: 450px;
     width: auto;
     border: 2px solid black;
 }
@@ -172,9 +181,10 @@ nav a:hover {
 .profile-pic {
     display: flex;
     width: 300px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     border-radius: 67%;
     border: 2px black solid;
+    margin: auto;
 }
 
 .profile-pic:hover {
@@ -190,7 +200,7 @@ nav a:hover {
     text-align: center;
     color: var (--black);
     height: 500px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 
@@ -252,7 +262,7 @@ wanted it to change to blue and underline when you hover on it */
 }
 
 .carousel-control-next-icon {
-    background-color: black;
+    /* background-color: black; */
 }
 
 
@@ -274,7 +284,8 @@ different media types */
     }
 }
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
     .contact-me-container {
         flex-direction: column;
     }
@@ -284,8 +295,47 @@ different media types */
     footer {
         margin: auto;
     }
-}
+} */
 
 .main-section {
-    background-color: rgb(159, 194, 141);
+    /* background-color: rgb(159, 194, 141); */
+    background: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) center center / cover no-repeat;
+    height: 100%;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.desc {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 2.25rem;
+    margin-right: 50px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+    .two-column {
+        display: inline-block;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
 }
