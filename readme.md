@@ -22,31 +22,24 @@ https://mjhwest.github.io/Michael-West-Portfolio/
 The first thing to i made sure i did was have the correct CSS file structure being rest.css followed by style.css 
 This was important as html reads down. The html will read and apply all the css in the rest.css file then it was read all the stlyes in the style.css . 
 
-![stylesheet](assets/screenshots/stylesheet.png)
 
 The "nav-bar" class was added in with a href "#aboutme (for example) so that when you clicked on the About Me in the nav part you were direct to that section of the page. The same principle was applied to Aboutme, Mywork and Contact. 
 
-![navbar](assets/screenshots/navbar.png)
 
 The next section was my "About Me Section". I wanted it all to be in a flex-box so it could all fit to screen, i wanted my profile picture to flex as well as have a nice looking border that changed when hovered over. The text was all selected so it was easy to read. 
 
-![aboutme](assets/screenshots/aboutme.png)
 
 Part of the acceptance criteria was that the first image showcasing your work had to be bigger as well have the function to take you to its deployed page if selected. This was achieved by using appropritate css styles to make sure the image was big enough as well as having a href link to the deployed landing page of my first project; being 'Horiseon-Marketing-Mockup"
 
-![mywork](assets/screenshots/mywork.png)
 
 The contact me section was made up of way to contact me. Being email, facebook, linkedin and github. The email 'mjhwest89@gmail.com'
 has a psedudo element so it stands out when hovered over. The facebook, linkedin and github logos were all provided with links to their respective pages. 
 
-![contactme](assets/screenshots/contactme.png)
 
 The contact me was a little  more interactive compared to previous sectoins. Mainly for styling reasons.  
 
-![contactcss](assets/screenshots/contactcss.png)
 
 Additional CSS elements were added through the project which can be located in the assets folder. 
-
 
 
 ## Credits
@@ -58,10 +51,9 @@ There was nothing to install to complete this project.
 
 
 ## Features
--The nav bar will direct you to those specific sections of the page. <br>
--The "My Work" section will direct you to the work i have completed if you click on the image. <br>
--The Facebook logo will take you to my facebook page if clicked on.<br>
--The LinkedIn logo will take you to my LinkedIn page if clicked on. <br>
--The GitHub logo will take you to ym GitHub page if clicked on. <br>
+-The nav bar will direct you to those specific links in new windows. <br>
+-The "Resume" section will direct you to a new window, that allows you to download my resume <br>
 -Certain elements have pseduo classes attached to them for styling purposes. <br>
+-The My Feature Work display the 3 work features i am most proud of. If you click on the image it directs you to the live application and the link to the GitHub. 
+-The Email Me link in the nav bar has a pop up window that enables the user to email me directly. 
 
