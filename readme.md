@@ -54,6 +54,6 @@ There was nothing to install to complete this project.
 -The nav bar will direct you to those specific links in new windows. <br>
 -The "Resume" section will direct you to a new window, that allows you to download my resume <br>
 -Certain elements have pseduo classes attached to them for styling purposes. <br>
--The My Feature Work display the 3 work features i am most proud of. If you click on the image it directs you to the live application and the link to the GitHub. 
+-The My Feature Work display the 3 work features i am most proud of. If you click on the image it directs you to the live application and the link to the GitHub. <br> 
 -The Email Me link in the nav bar has a pop up window that enables the user to email me directly. 
 
