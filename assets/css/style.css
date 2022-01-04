@@ -10,12 +10,11 @@
 }
 
 body {
-    /* min-height: 100vh; */
     line-height: 1.5;
     background-color: var(--whitesmoke);
     height: 100vh;
     min-width: 100%;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 p {
@@ -28,7 +27,6 @@ p {
 }
 
 header {
-    /* padding: 6px; */
     text-align: center;
     color: var (--black);
     font-size: 50px;
@@ -42,8 +40,6 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    /* padding: 5px; */
-    /* background-color: lightskyblue; */
     margin: auto;
 }
 
@@ -65,6 +61,7 @@ nav {
     font-weight: lighter;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
+    opacity: 56%;
 }
 
 .nav-link:hover {
@@ -85,6 +82,7 @@ nav {
     text-decoration: underline;
     text-align: center;
     cursor: pointer;
+    opacity: 67%;
 }
 
 .work-title:hover {
@@ -109,12 +107,7 @@ nav {
     font-family: 'Franzo', sans-serif;
 }
 
-.carousel-indicators {
-    /* bottom: -120px; */
-}
-
 .contact-title {
-    /* font-family: 'Hijo Puta Peligroso', sans-serif; */
     font-family: 'Karmatic Arcade', sans-serif;
     font-size: 40px;
 }
@@ -123,23 +116,7 @@ nav {
     color: red;
 }
 
-
-/*my about me section will flex to the screen */
-
-
-/* .about-me-container {
-    /* background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
-
-
-/* background-color: whitesmoke; */
-
-
-/* } */
-
-*/ .about-me-flex {
+.about-me-flex {
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -172,13 +149,9 @@ nav {
     color: white;
 }
 
-
-/* profile pic flexs also gave it a border radius and border for styling purposes */
-
 .profile-pic {
     display: flex;
     width: 300px;
-    /* margin-left: 50px; */
     border-radius: 67%;
     border: 2px black solid;
     margin: auto;
@@ -188,22 +161,16 @@ nav {
     border: 3px red solid;
 }
 
-
-/* i wanted everything centered for this section as i thought it looked best  */
-
 .my-work-container {
     width: 100%;
     justify-content: center;
     text-align: center;
     color: var (--black);
     height: 500px;
-    /* background-color: whitesmoke; */
 }
 
 
-/* this specifically refers to 'p' inside my work container, not all other p within portfolio  */
-
-.my-work-container p {
+/* .my-work-container p {
     margin-left: auto;
     overflow-wrap: break-word;
 }
@@ -231,7 +198,9 @@ nav {
     text-align: center;
     color: var (--black);
     /* background-color: var (--whitesmoke); */
-    background-color: lightskyblue;
+
+
+/* background-color: lightskyblue;
 }
 
 .contact-me-text {
@@ -239,9 +208,9 @@ nav {
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
-}
+} */
 
-
+*/
 /* made an id for email so it was specific to the email alone
 wanted it to change to blue and underline when you hover on it */
 
@@ -258,32 +227,7 @@ wanted it to change to blue and underline when you hover on it */
     background-color: black;
 }
 
-.carousel-control-next-icon {
-    /* background-color: black; */
-}
-
-
-/* media queries were used we made to i could define different style rules for 
-different media types */
-
-
-/* @media screen and (max-width: 768px) {
-    .about-me-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .my-work-container {
-        margin: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-} */
-
 .main-section {
-    /* background-color: rgb(159, 194, 141); */
     background: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) center center / cover no-repeat;
     height: 100%;
 }
@@ -314,9 +258,6 @@ different media types */
     margin-right: 50px;
     border-radius: 12px;
 }
-
-
-/* media queries for responsivness */
 
 @media (max-width: 1200px) {
     .image1 {
